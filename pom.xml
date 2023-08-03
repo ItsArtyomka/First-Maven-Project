@@ -9,13 +9,14 @@
     <artifactId>FirstMavenProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- Compiler Properties -->
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- Dependencies - External Libraries Basically -->
+    <!-- Dependencies - External Libraries -->
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -32,7 +33,6 @@
                 <skipTests>true</skipTests>
             </properties>
         </profile>
-
         <profile>
             <id>with-integration-tests</id>
             <build>
@@ -45,7 +45,6 @@
                 </plugins>
             </build>
         </profile>
-
     </profiles>
 
     <!-- Project Compilation Add-on Settings-->
